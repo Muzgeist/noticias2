@@ -9,6 +9,18 @@
     --tertiary-color: #000000;
     --quaternary-color: #dad7d7;
 }
+.claro{
+    --primary-color: #fd0f0f;
+    --secondary-color: #ffffff;
+    --tertiary-color: #000000;
+    --quaternary-color: #dad7d7;
+}
+.escuro{
+    --primary-color: #4e0101;
+    --secondary-color: #000000;
+    --tertiary-color: #602525;
+    --quaternary-color: #7d7d7d;
+}
 body{
     background-color: var(--quaternary-color);
 }
@@ -57,4 +69,31 @@ header h1{
 .noticia h2{
     text-align: center;
     margin-bottom: 15px;
+}
+header button{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    padding: 1vw;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    background-color: var(--quaternary-color);
+
+
+    color: var(--tertiary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+header button:active{
+    border: 2px solid var(--primary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
