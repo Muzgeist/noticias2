@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="../js/noticias.js"></script>
     <title>Noticias</title>
 </head>
+
 <body class="escuro">
     <header>
         <button onclick="alterar_tema()">Tema</button>
@@ -18,27 +20,37 @@
     <main>
         <section class="noticias">
             <article class="noticia">
-                <img src="../img/webnews.png" alt="">
+                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
                 <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur delectus iusto!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
+                    delectus iusto!</p>
                 <a href="#">Leia Mais...</a>
             </article>
             <article class="noticia">
-                <img src="../img/webnews.png" alt="">
+                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
                 <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur delectus iusto!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
+                    delectus iusto!</p>
                 <a href="#">Leia Mais...</a>
             </article>
             <article class="noticia">
-                <img src="../img/webnews.png" alt="">
+                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
                 <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur delectus iusto!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
+                    delectus iusto!</p>
                 <a href="#">Leia Mais...</a>
             </article>
+
         </section>
+
+        <div id="lightbox" class="lightbox" onclick="fechar_ligthbox()">
+            <span class="fechar">&times;</span>
+            <img class="lightbox-img" id="lightbox-img" src="">
+        </div>
 
     </main>
     <footer></footer>
 
 </body>
+
 </html>
