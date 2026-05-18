@@ -10,7 +10,7 @@
     <title>Noticias</title>
 </head>
 
-<body class="escuro">
+<body class="escuro" onload="exibir_noticias()">
     <header>
         <button onclick="alterar_tema()">Tema</button>
         <img src="../img/webnews.png" alt="webnews">
@@ -18,29 +18,7 @@
     </header>
     <nav></nav>
     <main>
-        <section class="noticias">
-            <article class="noticia">
-                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
-                <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
-                    delectus iusto!</p>
-                <a href="#">Leia Mais...</a>
-            </article>
-            <article class="noticia">
-                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
-                <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
-                    delectus iusto!</p>
-                <a href="#">Leia Mais...</a>
-            </article>
-            <article class="noticia">
-                <img src="../img/webnews.png" onclick="abrir_lightbox(this)" alt="">
-                <h2>Noticia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis temporibus animi tenetur
-                    delectus iusto!</p>
-                <a href="#">Leia Mais...</a>
-            </article>
-
+        <section class="noticias" id="noticias">
         </section>
 
         <div id="lightbox" class="lightbox" onclick="fechar_ligthbox()">
