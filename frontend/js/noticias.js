@@ -57,7 +57,7 @@ function exibir_noticias() {
     noticias.forEach(noticia => {
         html += `
             <article class="noticia">
-                <img src="${noticia.imagem}" onclick="abrir_lightbox(this)" alt="${noticia.titulo}">
+                <img src="${noticia.imagem}" onclick="abrir_lightbox(this)" alt="${noticia.ti}">
                 <h2>${noticia.titulo}</h2>
                 <p>${noticia.descricao}</p>
                 <a href="${noticia.link}">Leia Mais...</a>
@@ -66,4 +66,8 @@ function exibir_noticias() {
     });
 
     section.innerHTML = html;
+}
+
+function mudar_titulo(element){
+    element.innerText = "Portal Web";
 }
