@@ -6,13 +6,13 @@ app.use(express.json());
 
 app.get('/noticias', async (req, res) => {
     let query = `
-            SELECT
-                titulo,
-                conteudo,
-                caminhoImagem,
-                link
-            FROM
-                noticias
+        SELECT
+            titulo,
+            conteudo,
+            caminhoImagem,
+            link
+        FROM
+            noticias
         `;
 
         let resultado = await executarQuery(query);

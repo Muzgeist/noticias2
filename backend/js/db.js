@@ -16,7 +16,7 @@ async function executarQuery(query, params=[]) {
     const conexao = await conectar();
 
     try{
-        const resultado = await conexao.executo(query, params);
+        const resultado = await conexao.execute(query, params);
         return resultado;
     }
     catch (erro){
