@@ -46,7 +46,7 @@ async function exibir_noticias() {
         section.innerHTML = html;
     }
     catch (erro){
-        section.innerHTML('<h2>Erro ao carregar noticias</h2>')
+        section.innerHTML = '<h2>Erro ao carregar noticias</h2>'
     }
     }
 

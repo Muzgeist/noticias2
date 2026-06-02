@@ -28,7 +28,7 @@ app.get('/noticias', async (req, res) => {
 
 app.post('/noticias', async (req, res) => {
 
-    var Query = `
+    var query = `
         INSERT INTO noticias (
             titulo,
             conteudo,
