@@ -3,3 +3,5 @@ node_modules/
 package-lock.json
 atividades/
 tempCodeRunnerFile.js
+*.env
+    "start": "node --env-file=prd.env --watch ./js/server.js"
