@@ -28,7 +28,7 @@ async function exibir_noticias() {
     section.innerHTML = "<h2>Aguarde, carregando documento...</h2>"
 
     try{
-        const resposta = await fetch('http://127.0.0.1:3000/noticias');
+        const resposta = await fetch('noticias-backend-felipe-3000.up.railway.app');
         var noticias = await resposta.json();
 
         var html = "";

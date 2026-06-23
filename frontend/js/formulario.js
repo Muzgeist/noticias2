@@ -49,7 +49,7 @@ async function cadastrar_noticia() {
     };
 
     try {
-        const resposta = await fetch("http://127.0.0.1:3000/noticias", {
+        const resposta = await fetch("noticias-backend-felipe-3000.up.railway.app", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
