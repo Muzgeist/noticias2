@@ -49,7 +49,7 @@ async function cadastrar_noticia() {
     };
 
     try {
-        const resposta = await fetch("noticias-backend-felipe-3000.up.railway.app", {
+        const resposta = await fetch("https://noticias-frontend-felipe-production.up.railway.app/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
